@@ -13,7 +13,7 @@ var db *gorm.DB
 
 func init() {
 	var err error
-	db, err = gorm.Open("mysql", "root:zhangrun@tcp(47.103.90.59:3306)/gin_api?charset=utf8&parseTime=True&loc=Local")
+	db, err = gorm.Open("mysql", "root:password@tcp(yourip:3306)/gin_api?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic("can not connect to database")
 	}
